@@ -10,7 +10,7 @@ have ***snippets*** for you.
 - Select "Preferences: Configure User Snippets".
 - then, type "New Global Snippets file" and select that.
 - type file name as you're desire but, for now let's go with "cppSnippets".
-- now go to this [link]() and copy and paste the code.
+- now go to this [link](https://github.com/its-kunal/CPP_snippets/blob/master/.vscode/cppSnippets.code-snippets) and copy and paste the code.
 - save the file and you're good to go.
 ---
 ## Basic Templates
