@@ -1,0 +1,189 @@
+{
+	"mainIos": {
+		"prefix": [
+			"mi",
+			"main",
+			"#include",
+			"iiom"
+		],
+		"scope": "cpp",
+		"body": [
+			"#include<iostream>",
+			"using namespace std;",
+			"int main()",
+			"{",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "template for input output library with main function"
+	},
+	"mainCp": {
+		"prefix": [
+			"mi",
+			"main",
+			"#include",
+			"ibm"
+		],
+		"scope": "cpp",
+		"body": [
+			"#include<bits/stdc++.h>",
+			"using namespace std;",
+			"int main()",
+			"{",
+			"\t$0",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "template for all important library with main function"
+	},
+	"break": {
+		"scope": "cpp",
+		"prefix": [
+			"br",
+			"bk"
+		],
+		"body": "break;"
+	},
+	"if_2": {
+		"body": [
+			"if (${1:/*condition 1*/})",
+			"{",
+			"\tif (${2:/*condition 2*/})",
+			"\t{",
+			"\t\t${3:/*code*/}",
+			"\t}",
+			"\t${4:/*code*/}",
+			"}"
+		],
+		"prefix": "if_2",
+		"scope": "cpp",
+		"description": "Nested If's two times"
+	},
+	"if_3": {
+		"body": [
+			"if (${1:/*condition 1*/})",
+			"{",
+			"\tif (${2:/*condition 2*/})",
+			"\t{",
+			"\t\tif (${3:/*condition 3*/})",
+			"\t\t{",
+			"\t\t\t${4:/*code*/}",
+			"\t\t}",
+			"\t\t${5:/*code*/}",
+			"\t}",
+			"\t${6:/*code*/}",
+			"}"
+		],
+		"prefix": "if_3",
+		"scope": "cpp",
+		"description": "Nested If's three times"
+	},
+	"for_2": {
+		"body": [
+			"for(int ${1:i}=0;${1:i}<${2:n};${1:i}++)",
+			"{",
+			"\tfor(int ${3:j}=0;${3:j}<${4:m};${3:j}++)",
+			"\t{",
+			"\t\t${5://code}",
+			"\t}",
+			"\t${6://code}",
+			"}"
+		],
+		"prefix": [
+			"for_2",
+			"f_2"
+		],
+		"scope": "cpp",
+		"description": "Nested For Loops 2 times"
+	},
+	"for_3": {
+		"body": [
+			"for(int ${1:i};${1:i}<${2:n};${1:i}++)",
+			"{",
+			"\tfor(int ${3:j};${3:j}<${4:m};${3:j}++)",
+			"\t{",
+			"\t\tfor(int ${5:k};${5:k}<${6:o};${5:k}++)",
+			"\t\t{",
+			"\t\t\t${7://code}",
+			"\t\t}",
+			"\t\t${8://code}",
+			"\t}",
+			"\t${9://code}",
+			"}"
+		],
+		"prefix": [
+			"for_3",
+			"f_3"
+		],
+		"scope": "cpp",
+		"description": "Nested For Loops 3 times"
+	},
+	"inputTestCase": {
+		"body": [
+			"int ${1:t};",
+			"cin>>t;",
+			"while(t--)",
+			"{",
+			"\t${0://Code}",
+			"}"
+		],
+		"scope": "cpp",
+		"prefix": "itc",
+		"description": "Template to for Testcases"
+	},
+	"for_1": {
+		"body": [
+			"for(int ${1:i}=0; ${1:i}<${2:n};${1:i}++)",
+			"{",
+			"\t//code here",
+			"}"
+		],
+		"description": "For loop Range from 0 to N-1",
+		"prefix": [
+			"f_1",
+			"for_1"
+		],
+		"scope": "cpp"
+	},
+	"inpVar": {
+		"body": [
+			"${1|int,float,char,string|} ${2:i};",
+			"cin>>${2};"
+		],
+		"description": "Initialise a variable and take input",
+		"scope": "cpp",
+		"prefix": "inpVar"
+	},
+	"continue": {
+		"body": [
+			"continue;"
+		],
+		"scope": "cpp",
+		"description": "Continue",
+		"prefix": [
+			"carry on",
+			"continue",
+			"ct"
+		]
+	},
+	"ifel": {
+		"body": [
+			"if(${1:// Condition})",
+			"{",
+			"\t${2://Code Here}",
+			"}",
+			"else",
+			"{",
+			"\t${2://Code Here}",
+			"}"
+		],
+		"prefix": [
+			"ifel",
+			"ifelse",
+			"but"
+		],
+		"description": "If Else Template",
+		"scope": "cpp"
+	}
+}
